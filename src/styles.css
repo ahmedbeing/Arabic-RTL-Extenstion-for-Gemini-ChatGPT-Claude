@@ -1,0 +1,51 @@
+html.arabic-rtl-ext [dir="auto"],
+html.arabic-rtl-ext [dir="rtl"] {
+  text-align: start;
+  unicode-bidi: plaintext;
+}
+
+html.arabic-rtl-ext ul[dir="auto"],
+html.arabic-rtl-ext ol[dir="auto"],
+html.arabic-rtl-ext ul[dir="rtl"],
+html.arabic-rtl-ext ol[dir="rtl"],
+html.arabic-rtl-ext dl[dir="auto"],
+html.arabic-rtl-ext dl[dir="rtl"] {
+  padding-inline-start: 1.5em;
+  padding-inline-end: 0;
+  list-style-position: outside;
+}
+
+html.arabic-rtl-ext li[dir="auto"],
+html.arabic-rtl-ext li[dir="rtl"] {
+  text-align: start;
+}
+
+html.arabic-rtl-ext pre,
+html.arabic-rtl-ext code,
+html.arabic-rtl-ext kbd,
+html.arabic-rtl-ext samp,
+html.arabic-rtl-ext pre *,
+html.arabic-rtl-ext code * {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: isolate !important;
+}
+
+html.arabic-rtl-ext [dir="auto"] code,
+html.arabic-rtl-ext [dir="rtl"] code {
+  unicode-bidi: isolate !important;
+}
+
+html.arabic-rtl-ext[data-rtl-ext-site="claude"] .ProseMirror[dir="auto"] p,
+html.arabic-rtl-ext[data-rtl-ext-site="claude"] .ProseMirror p[dir="auto"] {
+  text-align: start;
+}
+
+html.arabic-rtl-ext[data-rtl-ext-site="chatgpt"] [data-message-author-role] [dir="auto"] {
+  text-align: start;
+}
+
+html.arabic-rtl-ext[data-rtl-ext-site="gemini"] .ql-editor[dir="auto"] p,
+html.arabic-rtl-ext[data-rtl-ext-site="gemini"] message-content [dir="auto"] {
+  text-align: start;
+}

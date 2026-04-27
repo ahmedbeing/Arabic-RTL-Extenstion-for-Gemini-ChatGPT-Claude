@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Arabic RTL</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>إعدادات RTL العربي</h1>
+      <p class="hint">يضبط اتجاه النص تلقائياً في محادثات Claude و ChatGPT و Gemini.</p>
+    </header>
+
+    <section class="row">
+      <label class="switch">
+        <span>تفعيل الإضافة</span>
+        <input type="checkbox" id="toggle-enabled" />
+        <span class="track"></span>
+      </label>
+    </section>
+
+    <section class="sites">
+      <h2>المواقع</h2>
+      <label class="switch">
+        <span>Claude</span>
+        <input type="checkbox" data-site="claude" />
+        <span class="track"></span>
+      </label>
+      <label class="switch">
+        <span>ChatGPT</span>
+        <input type="checkbox" data-site="chatgpt" />
+        <span class="track"></span>
+      </label>
+      <label class="switch">
+        <span>Gemini</span>
+        <input type="checkbox" data-site="gemini" />
+        <span class="track"></span>
+      </label>
+    </section>
+
+    <footer>
+      <button id="reload-tab">تحديث التبويب الحالي</button>
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
